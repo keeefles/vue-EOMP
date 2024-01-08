@@ -1,13 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <NavBar></NavBar>
+    <router-view/>
+  <Footer></Footer>
 </template>
 
 <script>
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
+  export default {
+    components: {
+      NavBar,
+      Footer,
+    }
+  }
 </script>
 
 <style src="@/assets/css/style.css"></style>
