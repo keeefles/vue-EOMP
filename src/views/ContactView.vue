@@ -1,4 +1,4 @@
-vbase <template>
+<template>
     <div>
 
     </div>
