@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-3">
+  <!-- <div class="container p-3">
     <div class="row">
       <div class="img-col">
         <img src="" alt="image" class="rounded-circle center" align-items="center">
@@ -9,32 +9,50 @@
           <p class="col-content center"></p>
       </div>
     </div>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <h1>This is home page</h1>
+    </div>
+    <div class="row" v-if="home">
+    <p class="lead" v-for="title in home" :key="title">
+      {{ title }}
+    </p>
+  </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
-  data() {
-    return {
-      titles: ["Full Stack Developer", "Software Engineer", "UI / UX Designer", "Software Developer"],
-      title: "UI / UX Designer",
-      i: 0,
-    };
+  computed: {
+    home(){
+      return this.$store.state.home
+    }
   },
-  mounted() {
-    setInterval(() => {
-      const titlesElement = document.getElementById('titles');
-      if (titlesElement) {
-        titlesElement.style.opacity = 0;
-        setTimeout(() => {
-          this.title = this.titles[this.i];
-          this.i = (this.i + 1) % this.titles.length;
-          titlesElement.style.opacity = 1;
-        }, 1000);
-      }
-    }, 3000);
-  },
+  mounted(){
+    this.$store.dispatch('fetchHome')
+  }
+//   name: 'HomeView',
+//   data() {
+//     return {
+//       titles: ["Full Stack Developer", "Software Engineer", "UI / UX Designer", "Software Developer"],
+//       title: "UI / UX Designer",
+//       i: 0,
+//     };
+//   },
+//   mounted() {
+//     setInterval(() => {
+//       const titlesElement = document.getElementById('titles');
+//       if (titlesElement) {
+//         titlesElement.style.opacity = 0;
+//         setTimeout(() => {
+//           this.title = this.titles[this.i];
+//           this.i = (this.i + 1) % this.titles.length;
+//           titlesElement.style.opacity = 1;
+//         }, 1000);
+//       }
+//     }, 3000);
+//   },
 };
 </script>
 
