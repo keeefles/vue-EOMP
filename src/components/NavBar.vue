@@ -66,7 +66,8 @@
     margin: 5px;
 }
 nav {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .nav-item a:hover{
   font-weight: bold;

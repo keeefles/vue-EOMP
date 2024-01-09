@@ -1,13 +1,15 @@
 <template>
   <div class="container">
     <div class="row">
-      <h1 class="heading">I am a <span id="titles">{{ title }}</span></h1>
-      <div class="row" v-if="home">
-        <p class="lead" v-for="title in home" :key="title">
-      {{ title }}
-    </p>
-  </div>
-  </div>
+      <div class="colHome">
+        <h1 class="heading">I am a <span id="titles">{{ title }}</span></h1>
+        <img src="https://i.postimg.cc/bJvVZBhx/2.png" alt="" class="imgHome">
+      <div class="row1" v-if="home">
+        <p class="lead" v-for="title in home" :key="title">{{ title }}</p>
+      </div>
+      <div class="background container-fluid"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -44,19 +46,39 @@ export default {
 </script>
 
 <style scoped>
+.background {
+  background-color: #1d3557;
+  height: 20px;
+  width: 50vw;
+  margin-bottom: 50px;
+}
 #titles {
   transition: opacity 10s ease-in-out;
   background-color: #1d3557;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 5px;
   color: #fff;
 }
 h1 {
   font-size: 40px;
   padding-bottom: 30px;
-  height: 150px;
+  height: 150px auto;
   width: 300px auto;
   text-align: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+.colHome{
+    flex-basis: 45%;
+    margin: 10px;
+}
+.imgHome{
+  width: 150px;
 }
 </style>

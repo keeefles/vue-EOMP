@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lora&family=Open+Sans&family=Parisienne&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&family=Playfair+Display&display=swap');
+
 *,
 *::after
 *::before {
@@ -6,10 +9,15 @@
     box-sizing: border-box;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Bodoni Moda', serif;
+  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Salsa', cursive;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Playfair Display', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
 }
-
