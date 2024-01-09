@@ -1,27 +1,25 @@
 <template>
-    <div class="container-fluid">
-        <div class="rowContact">
-            <div class="colContact">
-                <form action="https://formspree.io/f/mvojykkz" method="post">
+    <div class="contact-form">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/xdoqknke" method="post">
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1">
                 <label for="exampleFormControlInput1" class="form-label">Surname</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="surname">
+                <input type="text" class="form-control" id="exampleFormControlInput1">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 <label for="exampleFormControlTextarea1" class="form-label">Send Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <input class="btn" type="submit" name="Send" value="Submit">
+                <button class="btn" type="submit">Submit<i class="fas fa-paper-plane"></i></button>
                 </form>
-            </div>
-            <div class="colContact">
-                <h2>Get in Touch With Me:</h2>
-                <img src="https://i.postimg.cc/MpxP0X1b/icons8-github-32.png">
-            <a href="https://github.com/keeefles" target="_blank"> @keeefles</a><br>
-            <img src="https://i.postimg.cc/QMrV6Gf3/icons8-gmail-32.png">
-            <a href=""> aakeefahj@gmail.com</a><br>
-            <img src="https://i.postimg.cc/zXNS663q/icons8-whatsapp-32.png">
-                +27 79 866 6734<br>
+                </div>
+                <div class="form-img">
+                    <img src="https://i.postimg.cc/bJvVZBhx/2.png" alt="placeholder">
+                </div>
             </div>
         </div>
     </div>
@@ -34,67 +32,115 @@
 </script>
 
 <style scoped>
-/* .row {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#contact3 {
-    width: 300px;
-    height: auto;
-    background-color: #fff;
-    box-shadow: 0 0 20px 0 #a8dadc;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
+.contact-form {
     position: relative;
-}. */
-.btn {
-    border-radius: 30px;
-    color: #fff;
-    padding: 10px;
-    margin: 10px;
-    background-color: #1d3557;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-    transition: .4s;
-}
-#contact{
-    background-color: rgb(193, 193, 193);
-}
-.rowContact{
-    display: flex;
-    flex-direction: row;
+    min-height: 100vh;
+    z-index: 0;
+    background: #1d3557;
+    padding: 30px;
     justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
     align-items: center;
-    flex-wrap: wrap;
-    height: 80vh;
-    background-color: #a8dadc;
 }
-.colContact{
-    flex-basis: 45%;
-    margin: 10px;
+.container {
+    max-width: 700px;
+    margin-top: 0 auto;
 }
-.contactForm{
-    border: #000 2px solid;
-    width: max-content;
+.contact-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
 }
-.input-field{
-    padding: 5px 10px;
-    margin: 10px 10px;
-    box-shadow: 0 0 5px 0 #000;
+.contact-form h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #a8dadc;
+    text-align: center;
 }
-.input-field-textarea-field{
-    box-shadow: 0 0 5px 0 #000;
-    padding: 10px 20px;
-    margin: 10px 10px;
+.contact-form .main {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
 }
-#contact h2{
-    font-weight: 300;
-    font-size: 60px;
-    padding-bottom: 30px;
+.content {
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-img {
+    flex-basis: 50%;
+    background: #fff;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img {
+    max-width: 100%;
+}
+.btn, button, input {
+    border-radius: 35px;
+}
+.btn, button:hover {
+    color: #1d3557;
+    transition: 0.5s ease;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: #1d3557 1px solid;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input, 
+textarea{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #000;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 15px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #1d3557;
+    font-weight: 400;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+}
+@media(max-width:736px){
+    .contact-form .main{
+        flex-direction: column;
+    }
+    .contact-form form {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content {
+        order: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+    }
 }
 </style>
