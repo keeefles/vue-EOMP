@@ -1,13 +1,14 @@
 <template>
   <div class="container">
     <div class="row">
-      <h1>This is the about page</h1>
+      <div class="text-col">
+        <h1>About Me</h1>
+      </div>
+      <div class="row" v-if="about">
+          <p class="lead" v-for="title in about" :key="title">{{ title }}</p>
+      </div>
+      <div class="background container-fluid"></div>
     </div>
-    <div class="row" v-if="about">
-    <p class="lead" v-for="title in about" :key="title">
-      {{ title }}
-    </p>
-  </div>
   </div>
 </template>
 
@@ -23,3 +24,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.background {
+  background-color: #1d3557;
+  height: 20px;
+  width: 50vw;
+  margin-bottom: 50px;
+}
+</style>
