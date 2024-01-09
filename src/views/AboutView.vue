@@ -5,7 +5,7 @@
     </div>
     <div class="row" v-if="about">
     <p class="lead" v-for="title in about" :key="title">
-      {{ about }}
+      {{ title }}
     </p>
   </div>
   </div>
