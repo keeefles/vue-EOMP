@@ -65,4 +65,16 @@
 .nav-item {
     margin: 5px;
 }
+nav {
+  padding: 30px;
+}
+.nav-item a:hover{
+  font-weight: bold;
+  color: #a8dadc;
+}
+.nav-item a.router-link-exact-active {
+  color: #a8dadc;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px #a8dadc;
+}
 </style>
