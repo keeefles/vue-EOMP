@@ -6,7 +6,7 @@ export default createStore({
   state: {
     home: null,
     about: null,
-    education: null,
+    resume: null,
     skills: null,
     testimonials: null,
     projects: null
@@ -20,8 +20,8 @@ export default createStore({
     setAbout(state, value) {
       state.about = value
     },
-    setEducation(state, value) {
-      state.education = value
+    setResume(state, value) {
+      state.resume = value
     },
     setSkills(state, value) {
       state.skills = value
@@ -43,6 +43,21 @@ export default createStore({
       let res =  await fetch(dataUrl)
       let {about} = await res.json()
       context.commit('setAbout', about)
+    },
+    async fetchResume(context) {
+      let res =  await fetch(dataUrl)
+      let {resume} = await res.json()
+      context.commit('setResume', resume)
+    },
+    async fetchProjects(context) {
+      let res =  await fetch(dataUrl)
+      let {projects} = await res.json()
+      context.commit('setProjects', projects)
+    },
+    async fetchTestimonials(context) {
+      let res =  await fetch(dataUrl)
+      let {testimonials} = await res.json()
+      context.commit('setTestimonials', testimonials)
     }
   },
   modules: {
