@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
+.container {
+  background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
+}
 </style>

@@ -32,6 +32,9 @@
 </script>
 
 <style scoped>
+.container {
+  background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
+}
 .contact-form {
     position: relative;
     min-height: 100vh;

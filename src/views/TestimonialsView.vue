@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div class="container">
         <div class="row">
             <h1>Testimonials</h1>
         </div>
@@ -29,18 +29,20 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 @media all and (max-width:351px){
     #card-body{
-    margin-left: 0px;
-    padding-left: none;
+        margin-left: 0px;
+        padding-left: none;
+    }
+    .testies{
+        
+        /* text-wrap: wrap; */
+        padding-right: 40px;
+    }
 }
-.testies{
-
-    /* text-wrap: wrap; */
-    padding-right: 40px;
-}
+.container {
+    background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
 }
 #card{
     width: 22em;
