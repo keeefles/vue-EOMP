@@ -1,6 +1,6 @@
 <template>
     <div class="contact-form">
-        <h1>Contact Me</h1>
+        <h1>Let's get in touch!</h1>
         <div class="container">
             <div class="main">
                 <div class="content">
@@ -12,13 +12,27 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                <label for="exampleFormControlTextarea1" class="form-label">Send Message</label>
+                <label for="exampleFormControlTextarea1" class="form-label">Type Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btn" type="submit">Submit<i class="fas fa-paper-plane"></i></button>
+                <button class="btn" type="submit">Submit</button>
                 </form>
                 </div>
                 <div class="form-img">
                     <img src="https://i.postimg.cc/bJvVZBhx/2.png" alt="placeholder">
+                <div class="form-text">
+                    <p>
+                        <i class="bi bi-whatsapp"> +27 79 866 6734</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-house"> Rocklands, Mitchells Plain</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-instagram"><a href="https://www.instagram.com/_aakeefahjones_/" target="_blank">_aakeefahjones_</a></i>
+                    </p>
+                    <p>
+                        <i class="bi bi-github"><a href="https://github.com/keeefles" target="_blank">@keeefles</a></i>
+                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,31 +46,27 @@
 </script>
 
 <style scoped>
-.container {
-  background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
-}
 .contact-form {
-    position: relative;
-    min-height: 100vh;
-    z-index: 0;
-    background: #1d3557;
-    padding: 30px;
+    background-image: url('https://i.postimg.cc/5N1rS4vg/contact-eomp.png');
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     align-items: center;
 }
 .container {
-    max-width: 700px;
     margin-top: 0 auto;
+    max-width: 700px;
 }
-.contact-form h1 {
+h1 {
     text-align: center;
     font-size: 2.5rem;
+    padding-top: 20px auto;
+    margin: 10px;
+    background-color: #1d3557;
     font-weight: 400;
     color: #fff;
 }
-.contact-form h2 {
+h2 {
     line-height: 40px;
     margin-bottom: 5px;
     font-size: 30px;
@@ -74,36 +84,29 @@
     padding: 3em 3em;
     background: #fff;
     box-shadow: 2px 9px 49px -17px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 .form-img {
     flex-basis: 50%;
     background: #fff;
     padding: 40px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
     align-items: center;
     display: grid;
 }
-.form-img img {
+img {
     max-width: 100%;
 }
-.btn, button, input {
+.btn {
     border-radius: 35px;
 }
-.btn, button:hover {
+.btn:hover {
     color: #1d3557;
+    background-color: #a8dadc;
     transition: 0.5s ease;
 }
-.contact-form input:focus{
-    background: transparent;
-    border: #1d3557 1px solid;
-}
-.contact-form form{
+form{
     margin: 30px 0;
 }
-.contact-form input, 
+input, 
 textarea{
     outline: none;
     margin-bottom: 15px;
@@ -117,11 +120,10 @@ textarea{
     transition: 0.3s ease;
 }
 .contact-form button{
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
-    width: 100%;
+    width: 50%;
     background: #1d3557;
-    font-weight: 400;
     transition: 0.3s ease;
     padding: 14px 15px;
 }
@@ -129,21 +131,24 @@ textarea{
     .contact-form .main{
         flex-direction: column;
     }
-    .contact-form form {
+    form {
         margin-top: 30px;
         margin-bottom: 10px;
     }
     .form-img {
-        border-radius: 0;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
         order: 2;
     }
     .content {
         order: 1;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-
     }
+}
+.form-control:hover {
+    border: 3px solid #1d3557;
+    padding: 10px;
+    margin: 10px;
+}
+.form-text {
+    text-align: left;
+    color: #000;
 }
 </style>
