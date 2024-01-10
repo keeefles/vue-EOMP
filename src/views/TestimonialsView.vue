@@ -74,7 +74,15 @@ export default {
     height: auto;
     border-radius: 15px;
     box-shadow: 10px 10px 15px 0px #a8dadc;
-    border: none;
+}
+.card:hover{
+    box-shadow: 0px 2px 10px 5px #1d3557;
+    color: #a8dadc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1d3557;
+    border: dashed #fff;
+    
 }
 .card-img-top {
     width: 200px;
