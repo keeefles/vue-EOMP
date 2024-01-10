@@ -4,7 +4,7 @@
             <h1>Projects</h1>
         </div>
 
-        <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly" v-if="projects">
+        <div class="card-deck" v-if="projects">
           <div v-for="project in projects" :key="project.name" class="card" style="width: 18rem;">
           <img :src="project.image" class="card-img-top" :alt="`image for ${project.name}`">
           <div class="card-body">
@@ -45,5 +45,35 @@ export default {
   border: none;
   cursor: pointer;
   transition: .4s;
+}
+.btn:hover{
+  background-color: #a8dadc;
+  color: black;
+  transition: 1s;
+  padding: 10px;
+  font-size: small;
+  margin: 10px;
+}
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 10px;
+}
+.card{
+    margin: 20px auto;
+    height: auto;
+    border-radius: 15px;
+}
+.card:hover {
+  border: none;
+  box-shadow: 10px 5px 15px 0px #a8dadc;
+}
+.card-img-top {
+  height: 160px;
+  display: flex;
+  margin: auto;
 }
 </style>
