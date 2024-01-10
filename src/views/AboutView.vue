@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
+}
 .background {
   background-color: #1d3557;
   height: 20px;
