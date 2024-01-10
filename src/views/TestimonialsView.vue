@@ -7,9 +7,9 @@
         <div id="testes" class="card-deck" v-if="testimonials">
           <div v-for="testimonial in testimonials" :key="testimonial.name" id="card" class="card">
             <div id="card-body" class="card-body">
-                <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+                <h5 class="card-title" >{{ testimonial.name }} {{ testimonial.surname }}</h5>
                 <p class="card-text">{{ testimonial.title }}</p>
-                <p class="testes">{{ testimonial.quotes }}</p>
+                <p class="testes" >{{ testimonial.quotes }}</p>
                 <img :src="testimonial.profile" class="card-img-top" :alt="BRUH">
           </div>
           </div>
@@ -32,13 +32,18 @@ export default {
 <style scoped>
 @media all and (max-width:351px){
     #card-body{
-        margin-left: 0px;
-        padding-left: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0px;
     }
     .testes{
-        
-        /* text-wrap: wrap; */
-        padding-right: 40px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+        font-size: 15px;
+    }
+    .card-img-top {
+        width: 150px;
+        padding-right: 20px;
     }
 }
 .container {
