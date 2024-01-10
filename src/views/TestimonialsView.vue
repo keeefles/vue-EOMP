@@ -1,15 +1,84 @@
 <template>
-    <div>
+    <div >
+        <div class="row">
+            <h1>Testimonials</h1>
+        </div>
 
+        <div id="testes" class="card-deck" v-if="testimonials">
+          <div v-for="testimonial in testimonials" :key="testimonial.name" id="card" class="card">
+            <div id="card-body" class="card-body">
+                <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+                <p class="card-text">{{ testimonial.title }}</p>
+                <p class="testies">{{ testimonial.quotes }}</p>
+                <img :src="testimonial.profile" class="card-img-top" :alt="BRUH">
+          </div>
+          </div>
+        </div>
     </div>
 </template>
 
 <script>
-    export default {
-        
+export default {
+  computed: {
+    testimonials(){
+      return this.$store.state.testimonials
     }
+  },
+  mounted(){
+    this.$store.dispatch('fetchTestimonials')
+  }
+};
 </script>
 
 <style scoped>
+@media all and (max-width:351px){
+    #card-body{
+    margin-left: 0px;
+    padding-left: none;
+}
+.testies{
 
+    /* text-wrap: wrap; */
+    padding-right: 40px;
+}
+}
+#card{
+    width: 22em;
+}
+#card-body{
+    margin-left: auto;
+    margin-right: auto;
+}
+#testes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-body {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: max-content;
+    justify-content: space-between;
+}
+.card{
+    padding: 10px 10px 10px 10px;
+    margin: 20px;
+    height: auto;
+}
+.card-img-top {
+    width: 200px;
+}
+.testies{
+    height: 250px;
+    width: 19cap;
+    padding-right: 2cap;
+    margin-left: auto;
+    margin-right: auto;
+}
 </style>

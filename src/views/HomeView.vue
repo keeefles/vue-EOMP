@@ -1,4 +1,5 @@
 <template>
+  <aside>
   <div class="container">
     <div class="row">
       <div class="colHome">
@@ -11,6 +12,7 @@
       </div>
     </div>
   </div>
+  </aside>
 </template>
 
 <script>
@@ -46,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+
+aside{
+  height: 70vh;
+}
 .background {
   background-color: #1d3557;
   height: 20px;
@@ -80,5 +86,10 @@ h1 {
 }
 .imgHome{
   width: 150px;
+}
+@media all and (max-width: 350px) {
+  aside{
+  height: 140vh;
+}
 }
 </style>
