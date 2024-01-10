@@ -9,7 +9,7 @@
             <div id="card-body" class="card-body">
                 <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
                 <p class="card-text">{{ testimonial.title }}</p>
-                <p class="testies">{{ testimonial.quotes }}</p>
+                <p class="testes">{{ testimonial.quotes }}</p>
                 <img :src="testimonial.profile" class="card-img-top" :alt="BRUH">
           </div>
           </div>
@@ -35,7 +35,7 @@ export default {
         margin-left: 0px;
         padding-left: none;
     }
-    .testies{
+    .testes{
         
         /* text-wrap: wrap; */
         padding-right: 40px;
@@ -72,11 +72,14 @@ export default {
     padding: 10px 10px 10px 10px;
     margin: 20px;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 0px #a8dadc;
+    border: none;
 }
 .card-img-top {
     width: 200px;
 }
-.testies{
+.testes{
     height: 250px;
     width: 19cap;
     padding-right: 2cap;
