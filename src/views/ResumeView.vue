@@ -98,4 +98,9 @@ export default {
   margin-right: auto;
   margin-left: auto;
 }
+.card:hover {
+  background: #1d3557;
+  color: #fff;
+  transition: .5s ease-in;
+}
 </style>
