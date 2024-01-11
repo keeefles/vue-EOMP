@@ -1,15 +1,15 @@
 <template>
-  <div class="container">
+  <div class="container p-3">
+    <h1 id="heading">About Me</h1>
     <div class="row">
-      <div class="text-col">
-        <h1>About Me</h1>
+      <div class="img-col">
+        <img src="https://i.postimg.cc/h43qB9jP/20231118-123519.jpg" alt="image" class="center aboutImg" align-items="center">
       </div>
-      <div class="row" v-if="about">
+        <div class="text-col" v-if="about">
           <p class="lead" v-for="title in about" :key="title">{{ title }}</p>
       </div>
-      <div class="background container-fluid"></div>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -26,10 +26,59 @@ export default {
 </script>
 
 <style scoped>
-.background {
-  background-color: #1d3557;
-  height: 20px;
-  width: 50vw;
-  margin-bottom: 50px;
+p {
+  font-size: 18px;
+}
+.p-3{
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutImg {
+  width: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col {
+  flex-basis: 50%;
+  margin: 0 auto 20 auto;
+  height: max-content;
+}
+.center {
+  width: 250px;
+}
+@media (max-width: 351px) {
+  .text-col {
+    width: 250px;
+    margin: auto;
+  }
+  .aboutImg {
+    margin: 0;
+    padding-bottom: 20px;
+    width: 200px;
+  }
+  .lead {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>
