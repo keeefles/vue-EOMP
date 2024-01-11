@@ -21,6 +21,7 @@ export default createStore({
       state.about = value
     },
     setResume(state, value) {
+      console.log(value);
       state.resume = value
     },
     setSkills(state, value) {
@@ -53,6 +54,11 @@ export default createStore({
       let res =  await fetch(dataUrl)
       let {projects} = await res.json()
       context.commit('setProjects', projects)
+    },
+    async fetchSkills(context) {
+      let res =  await fetch(dataUrl)
+      let {skills} = await res.json()
+      context.commit('setSkills', skills)
     },
     async fetchTestimonials(context) {
       let res =  await fetch(dataUrl)
