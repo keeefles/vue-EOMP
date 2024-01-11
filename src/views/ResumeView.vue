@@ -5,7 +5,7 @@
     </div>
     <div class="row" v-if="resume">
     <p class="lead" v-for="title in resume" :key="title">
-      {{ title.year }}{{ title.description}}
+      {{ title.year }}{{ title.place }}
     </p>
   </div>
   </div>

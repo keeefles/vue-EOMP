@@ -76,6 +76,10 @@ h1 {
   width: 300px auto;
   text-align: center;
 }
+.lead {
+  background-color: #fff;
+  color: #1d3557;
+}
 .row {
   display: flex;
   flex-direction: row;

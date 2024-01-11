@@ -37,18 +37,18 @@ export default {
 }
 .btn {
   border-radius: 30px;
-  color: #fff;
+  color: #000;
   padding: 10px;
   margin: 10px;
-  background-color: #1d3557;
+  background-color: #a8dadc;
   font-size: 12px;
   border: none;
   cursor: pointer;
   transition: .4s;
 }
 .btn:hover{
-  background-color: #a8dadc;
-  color: black;
+  background-color: #1d3557;
+  color: #fff;
   transition: 1s;
   padding: 10px;
   font-size: small;
