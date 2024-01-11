@@ -84,8 +84,8 @@ export default {
     padding: 10px;
     background-color: #1d3557;
     border: dashed #fff;
-    border-collapse: separate;
-    border-spacing: 10px;
+    transition: .5s ease-in;
+
 }
 .card-img-top {
     width: 200px;
