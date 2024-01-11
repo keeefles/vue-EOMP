@@ -19,7 +19,7 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Type Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-                <input class="btn" type="submit" value="Submit" placeholder="Submit">
+                <input class="btn" type="submit" name="Send" value="Submit" placeholder="Submit" >
                 </form>
                 </div>
                 <div class="form-img">
