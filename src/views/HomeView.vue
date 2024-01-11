@@ -4,7 +4,7 @@
     <div class="row">
       <div class="colHome">
         <h1 class="heading">I am a <span id="titles">{{ title }}</span></h1>
-        <img src="https://i.postimg.cc/bJvVZBhx/2.png" alt="" class="imgHome">
+        <img src="https://i.postimg.cc/h43qB9jP/20231118-123519.jpg" alt="" class="imgHome">
       <div class="row1" v-if="home">
         <p class="lead" v-for="title in home" :key="title">{{ title }}</p>
       </div>
@@ -52,9 +52,7 @@ export default {
 aside{
   height: 70vh;
 }
-.container {
-  background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
-}
+
 .background {
   background-color: #1d3557;
   height: 20px;
@@ -93,6 +91,7 @@ h1 {
 }
 .imgHome{
   width: 150px;
+  margin-bottom: 20px;
 }
 @media all and (max-width: 350px) {
   aside{

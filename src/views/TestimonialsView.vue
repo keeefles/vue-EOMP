@@ -46,9 +46,6 @@ export default {
         padding-right: 20px;
     }
 }
-.container {
-    background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
-}
 #card{
     width: 22em;
 }
@@ -87,7 +84,8 @@ export default {
     padding: 10px;
     background-color: #1d3557;
     border: dashed #fff;
-    
+    border-collapse: separate;
+    border-spacing: 10px;
 }
 .card-img-top {
     width: 200px;

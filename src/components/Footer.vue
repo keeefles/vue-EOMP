@@ -19,7 +19,6 @@
 
 <style scoped>
 .footer{
-    text-align: center;
-    bottom: 0%;
+    bottom: 0;
 }
 </style>

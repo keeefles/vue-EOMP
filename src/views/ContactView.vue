@@ -6,19 +6,24 @@
                 <div class="content">
                     <h2>Contact Me</h2>
                 <form action="https://formspree.io/f/xdoqknke" method="post">
+
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1">
+
                 <label for="exampleFormControlInput1" class="form-label">Surname</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1">
+
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
                 <label for="exampleFormControlTextarea1" class="form-label">Type Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btn" type="submit">Submit</button>
+
+                <input class="btn" type="submit" name="Send" value="Submit" placeholder="Submit" >
                 </form>
                 </div>
                 <div class="form-img">
-                    <img src="https://i.postimg.cc/bJvVZBhx/2.png" alt="placeholder">
+                    <img src="https://i.postimg.cc/bJvVZBhx/2.png" class="rotate" alt="placeholder">
                 <div class="form-text">
                     <p>
                         <i class="bi bi-whatsapp"> +27 79 866 6734</i>
@@ -95,8 +100,27 @@ h2 {
 img {
     max-width: 100%;
 }
+.rotate {
+    animation: rotation 9s infinite linear;
+    border-radius: 90px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .btn {
     border-radius: 35px;
+    color: #000;
+    padding: 10px;
+    background-color: #a8dadc;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
 }
 .btn:hover {
     color: #1d3557;
