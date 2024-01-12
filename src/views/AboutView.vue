@@ -1,6 +1,6 @@
 <template>
   <div class="container p-3">
-    <h1 id="heading">About M</h1>
+    <h1 id="heading">About Me</h1>
     <div class="row">
       <div class="img-col">
         <img src="https://i.postimg.cc/h43qB9jP/20231118-123519.jpg" alt="image" class="center aboutImg" align-items="center">
