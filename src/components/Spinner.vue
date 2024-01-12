@@ -8,8 +8,18 @@
 
 <script>
     export default {
-        name: 'SpinnerComp'
-    }
+        name: 'SpinnerComp',
+        data() {
+      return {
+        isloading: true,
+      };
+    },
+    mounted() {
+      setTimeout(() => {
+        this.isloading = false;
+      }, 2000);
+    },
+  };
 </script>
 
 <style scoped>
