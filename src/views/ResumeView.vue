@@ -36,7 +36,7 @@
         </div>
       </div>
     </section>
-    <button class="btn"><a href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link" target="_blank">Download CV</a></button>
+    <button class="btn"><a href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link" target="_blank" class="yes">Download CV</a></button>
   </div>
 </template>
 
@@ -60,6 +60,9 @@ export default {
 <style scoped>
 .container {
   margin: 20px auto;
+}
+.yes {
+  text-decoration: none;
 }
 .card-deck {
   display: flex;

@@ -3,7 +3,7 @@
     <h1 id="heading">About Me</h1>
     <div class="row">
       <div class="img-col">
-        <img src="https://iili.io/JYJ5VP1.md.jpg" alt="image" class="center aboutImg" align-items="center">
+        <img src="https://iili.io/JYdoiFf.md.jpg" alt="image" class="center aboutImg" align-items="center">
       </div>
         <div class="text-col" v-if="about">
           <p class="lead" v-for="title in about" :key="title">{{ title }}</p>
