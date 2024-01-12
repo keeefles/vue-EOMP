@@ -36,6 +36,7 @@
         </div>
       </div>
     </section>
+    <button class="btn"><a href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link" target="_blank">Download CV</a></button>
   </div>
 </template>
 
@@ -124,5 +125,25 @@ export default {
 .card-experience {
   margin-left: auto;
   margin-right: auto;
+}
+.btn {
+  border-radius: 30px;
+  color: #000;
+  padding: 10px;
+  margin: 10px;
+  background-color: #a8dadc;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: #1d3557;
+  color: #fff;
+  transition: 1s;
+  padding: 10px;
+  font-size: small;
+  margin: 10px;
 }
 </style>
