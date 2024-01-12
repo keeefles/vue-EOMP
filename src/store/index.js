@@ -36,34 +36,58 @@ export default createStore({
   },
   actions: {
     async fetchHome(context) {
+      try {
       let res =  await fetch(dataUrl)
       let {home} = await res.json()
       context.commit('setHome', home)
+      } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     },
     async fetchAbout(context) {
+    try {
       let res =  await fetch(dataUrl)
       let {about} = await res.json()
       context.commit('setAbout', about)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     },
     async fetchResume(context) {
+      try {
       let res =  await fetch(dataUrl)
       let {resume} = await res.json()
       context.commit('setResume', resume)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     },
     async fetchProjects(context) {
+      try {
       let res =  await fetch(dataUrl)
       let {projects} = await res.json()
       context.commit('setProjects', projects)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     },
     async fetchSkills(context) {
+      try {
       let res =  await fetch(dataUrl)
       let {skills} = await res.json()
       context.commit('setSkills', skills)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     },
     async fetchTestimonials(context) {
+      try {
       let res =  await fetch(dataUrl)
       let {testimonials} = await res.json()
       context.commit('setTestimonials', testimonials)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
     }
   },
   modules: {
