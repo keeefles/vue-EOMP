@@ -8,6 +8,7 @@
       <div class="row1" v-if="home">
         <p class="lead" v-for="title in home" :key="title">{{ title }}</p>
       </div>
+      <button class="btn"><a href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link" target="_blank">Download CV</a></button>
       <div class="background container-fluid"></div>
       </div>
     </div>
@@ -97,5 +98,24 @@ h1 {
   aside{
   height: 140vh;
 }
+}
+.btn {
+  border-radius: 30px;
+  color: #000;
+  padding: 10px;
+  margin: 10px;
+  background-color: #a8dadc;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+.btn:hover{
+  background-color: #1d3557;
+  color: #fff;
+  transition: 1s;
+  padding: 10px;
+  font-size: small;
+  margin: 10px;
 }
 </style>
