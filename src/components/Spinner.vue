@@ -17,7 +17,7 @@
     mounted() {
       setTimeout(() => {
         this.isloading = false;
-      }, 2000);
+      }, 500);
     },
   };
 </script>
