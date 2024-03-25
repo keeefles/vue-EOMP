@@ -52,7 +52,6 @@
 
 <style scoped>
 .contact-form {
-    background-image: url('https://i.postimg.cc/5N1rS4vg/contact-eomp.png');
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr auto 1fr;

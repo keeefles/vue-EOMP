@@ -15,19 +15,6 @@
   </div>
   </aside>
 </template>
-<template>
-  <div class="container p-3">
-    <h1 id="heading">About Me</h1>
-    <div class="row">
-      <div class="img-col">
-        <img src="https://iili.io/JYdoiFf.md.jpg" alt="image" class="center aboutImg" align-items="center">
-      </div>
-        <div class="text-col" v-if="about">
-          <p class="lead" v-for="title in about" :key="title">{{ title }}</p>
-      </div>
-      </div>
-    </div>
-</template>
 
 <script>
 export default {
@@ -41,9 +28,9 @@ export default {
   computed: {
     home(){
       return this.$store.state.home
-    }
+    },
   },
-  mounted(){
+    mounted(){
     this.$store.dispatch('fetchHome')
     setInterval(() => {
       const titlesElement = document.getElementById('titles');
