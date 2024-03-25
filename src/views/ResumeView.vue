@@ -12,6 +12,7 @@
               <h5 class="card-title1">{{ res.place }}</h5>
               <p class="card-text">{{ res.information }}</p>
               <p class="card-text">{{ res.type }}</p>
+              <p class="card-text">{{ res.role }}</p>
               <p class="card-text">{{ res.year }}</p>
             </div>
           </div>
