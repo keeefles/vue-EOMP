@@ -73,7 +73,7 @@ export default {
 }
 .card {
   margin: 20px auto;
-  height: 220px;
+  height: 230px;
   border-radius: 15px;
   text-align: center;
 }
