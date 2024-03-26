@@ -136,6 +136,7 @@ export default {
 .card-experience {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 .btn {
   border-radius: 30px;
