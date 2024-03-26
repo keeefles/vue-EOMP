@@ -10,8 +10,8 @@
           <div v-for="res in resume" :key="res.place" class="card" style="width: 18rem;">
             <div class="card-bodyy">
               <h5 class="card-title1">{{ res.place }}</h5>
-              <p class="card-text">{{ res.information }}</p>
-              <p class="card-text">{{ res.type }}</p>
+              <p class="card-text font">{{ res.information }}</p>
+              <p class="card-text font">{{ res.type }}</p>
               <p class="card-text role">{{ res.role }}</p>
               <p class="card-text year">{{ res.year }}</p>
             </div>
@@ -128,6 +128,9 @@ export default {
   width: 198.4px;
   margin: 0;
   font-size: 15px;
+  /* font-style: italic; */
+}
+.font {
   font-style: italic;
 }
 .card-experience {
