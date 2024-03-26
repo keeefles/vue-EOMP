@@ -124,7 +124,7 @@ export default {
 .card-text {
   width: 198.4px;
   margin: 0;
-  font-size: 12px;
+  font-size: 15px;
   font-style: italic;
 }
 .card-experience {
@@ -152,6 +152,6 @@ export default {
   margin: 10px;
 }
 .year {
-  font-weight: 500;
+  font-weight: bold;
 }
 </style>
