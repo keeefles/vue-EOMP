@@ -32,6 +32,9 @@ export default {
 </script>
 
 <style scoped>
+.card-text {
+  height: 72px;
+}
 .btn {
   border-radius: 30px;
   color: #000;
@@ -61,7 +64,7 @@ export default {
 }
 .card{
     margin: 20px auto;
-    height: auto;
+    height: max-content;
     border-radius: 15px;
 }
 .card:hover {
