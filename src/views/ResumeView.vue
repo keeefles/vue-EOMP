@@ -12,7 +12,7 @@
               <h5 class="card-title1">{{ res.place }}</h5>
               <p class="card-text">{{ res.information }}</p>
               <p class="card-text">{{ res.type }}</p>
-              <p class="card-text">{{ res.role }}</p>
+              <p class="card-text role">{{ res.role }}</p>
               <p class="card-text year">{{ res.year }}</p>
             </div>
           </div>
@@ -61,6 +61,9 @@ export default {
 <style scoped>
 .container {
   margin: 20px auto;
+}
+.role {
+  font-style: normal;
 }
 .yes {
   text-decoration: none;
