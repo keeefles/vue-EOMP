@@ -13,7 +13,7 @@
               <p class="card-text">{{ res.information }}</p>
               <p class="card-text">{{ res.type }}</p>
               <p class="card-text">{{ res.role }}</p>
-              <p class="card-text">{{ res.year }}</p>
+              <p class="card-text year">{{ res.year }}</p>
             </div>
           </div>
         </div>
@@ -124,6 +124,7 @@ export default {
 .card-text {
   width: 198.4px;
   margin: 0;
+  font-size: 12px;
   font-style: italic;
 }
 .card-experience {
@@ -149,5 +150,8 @@ export default {
   padding: 10px;
   font-size: small;
   margin: 10px;
+}
+.year {
+  font-weight: 500;
 }
 </style>
