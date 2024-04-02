@@ -35,19 +35,21 @@ export default {
     #card-body{
         margin-left: auto;
         margin-right: auto;
-        padding-right: 0px;
-        width: fit-content;
+        width: max-content;
     }
     .testes{
         padding-right: 0px;
-        padding-bottom: 100px;
-        width: 230px;
+        padding-bottom: 0px;
+        width: 10px;
         font-size: 15px;
     }
     .card-img-top {
         width: 150px;
-        padding-right: 20px;
+        margin-right: 20px;
         display: inline-block;
+    }
+    #testes {
+        width: 290px;
     }
 }
 #card{
