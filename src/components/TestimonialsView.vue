@@ -36,15 +36,18 @@ export default {
         margin-left: auto;
         margin-right: auto;
         padding-right: 0px;
+        width: fit-content;
     }
     .testes{
         padding-right: 0px;
         padding-bottom: 100px;
+        width: 230px;
         font-size: 15px;
     }
     .card-img-top {
         width: 150px;
         padding-right: 20px;
+        display: inline-block;
     }
 }
 #card{
