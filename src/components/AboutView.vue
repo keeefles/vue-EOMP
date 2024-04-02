@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-3">
+  <div class="container p-3" id="about">
     <h1 id="heading">About Me</h1>
     <div class="row">
       <div class="img-col">

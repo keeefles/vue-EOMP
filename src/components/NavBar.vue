@@ -16,30 +16,30 @@
                     Home
                     </router-link>
                 </li>
-                <!-- <li class="nav-item">
-                    <router-link to="/about" a class="nav-link">
+                <li class="nav-item">
+                    <a href="#about" a class="nav-link">
                         About Me
-                    </router-link>
-                </li> -->
+                    </a>
+                </li>
                 <li class="nav-item">
-                    <router-link to="/resume" a class="nav-link">
+                    <a href="#resume" a class="nav-link">
                         Resume
-                    </router-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/projects" a class="nav-link">
+                    <a href="#projects" a class="nav-link">
                         Projects
-                    </router-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/testimonials" a class="nav-link">
+                    <a href="#testimonials" a class="nav-link">
                         Testimonials
-                    </router-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/contact" a class="nav-link">
+                    <a href="#contact" to="/contact" a class="nav-link">
                         Contact Me
-                    </router-link>
+                    </a>
                 </li>  
             </ul>
             </div>

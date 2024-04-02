@@ -51,7 +51,7 @@ export default {
 <style scoped>
 
 aside{
-  height: 70vh;
+  height: 50vh auto;
 }
 
 .background {
