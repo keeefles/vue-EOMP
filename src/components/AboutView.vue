@@ -3,7 +3,7 @@
     <h1 id="heading">About Me</h1>
     <div class="row">
       <div class="img-col">
-        <img src="https://iili.io/JYdoiFf.md.jpg" alt="image" class="center aboutImg" align-items="center">
+        <img src="https://iili.io/JXS2e0x.jpg" alt="image" class="center aboutImg" align-items="center">
       </div>
         <div class="text-col" v-if="about">
           <p class="lead" v-for="title in about" :key="title">{{ title }}</p>
@@ -14,6 +14,7 @@
 
 <script>
 export default {
+  name: 'AboutView',
   computed: {
     about(){
       return this.$store.state.about
@@ -27,7 +28,7 @@ export default {
 
 <style scoped>
 p {
-  font-size: 18px;
+  font-size: 15px;
 }
 .p-3{
     margin-left: auto;
@@ -54,11 +55,11 @@ p {
     margin-top: 20px;
 }
 .text-col {
-  flex-basis: 50%;
-  margin-bottom: 20px;
+  flex-basis: 65%;
+  background-color: white
 }
 .img-col {
-  flex-basis: 50%;
+  flex-basis: 35%;
   margin: 0 auto 20 auto;
   height: max-content;
 }
@@ -80,5 +81,8 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+h1 {
+  margin-top: 25px;
 }
 </style>

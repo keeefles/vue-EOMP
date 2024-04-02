@@ -76,4 +76,7 @@ export default {
   display: flex;
   margin: auto;
 }
+h1 {
+  margin-top: 25px;
+}
 </style>

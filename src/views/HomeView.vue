@@ -121,4 +121,7 @@ h1 {
   font-size: small;
   margin: 10px;
 }
+p{
+  font-size: 16px;
+}
 </style>

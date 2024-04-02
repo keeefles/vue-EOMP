@@ -16,11 +16,11 @@
                     Home
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <router-link to="/about" a class="nav-link">
                         About Me
                     </router-link>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <router-link to="/resume" a class="nav-link">
                         Resume

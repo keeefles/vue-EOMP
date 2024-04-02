@@ -19,6 +19,7 @@
 
 <script>
 export default {
+    name: 'TestimonialsView',
   computed: {
     testimonials(){
       return this.$store.state.testimonials
@@ -64,9 +65,9 @@ export default {
     justify-content: center;
 }
 .card-body {
-    margin: 10px;
+    /* margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: 200px; */
     height: max-content;
     justify-content: space-between;
 }
@@ -91,10 +92,13 @@ export default {
     width: 200px;
 }
 .testes{
-    height: 250px;
-    width: 19cap;
-    padding-right: 2cap;
+    height: 200px;
+    width: 250px;
+    /* padding-right: 2cap; */
     margin-left: auto;
     margin-right: auto;
+}
+h1 {
+    margin-top: 25px;
 }
 </style>

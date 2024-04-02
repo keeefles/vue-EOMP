@@ -43,6 +43,7 @@
 
 <script>
 export default {
+  name: 'ResumeView',
   computed: {
     resume() {
       return this.$store.state.resume;
@@ -160,5 +161,8 @@ export default {
 }
 .year {
   font-weight: bold;
+}
+h1 {
+  margin-top: 25px;
 }
 </style>

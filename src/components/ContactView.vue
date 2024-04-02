@@ -46,7 +46,7 @@
 
 <script>
     export default {
-        
+        name: 'ContactView',
     }
 </script>
 
@@ -63,12 +63,11 @@
 }
 h1 {
     text-align: center;
-    font-size: 2.5rem;
-    padding-top: 20px auto;
+    margin-top: 25px;
+    padding-top: 20px;
     margin: 10px;
-    background-color: #1d3557;
+    color: black;
     font-weight: 400;
-    color: #fff;
 }
 h2 {
     line-height: 40px;
@@ -87,7 +86,7 @@ h2 {
     flex-basis: 50%;
     padding: 3em 3em;
     background: #fff;
-    box-shadow: 2px 9px 49px -17px;
+    /* box-shadow: 2px 9px 49px -17px; */
 }
 .form-img {
     flex-basis: 50%;
