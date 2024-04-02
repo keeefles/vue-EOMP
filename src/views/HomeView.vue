@@ -51,7 +51,7 @@ export default {
 <style scoped>
 
 aside{
-  height: 50vh auto;
+  height: 60vh;
 }
 
 .background {
@@ -100,7 +100,7 @@ h1 {
 }
 @media all and (max-width: 350px) {
   aside{
-  height: 110vh auto;
+  height: 130vh;
 }
 }
 .btn {
