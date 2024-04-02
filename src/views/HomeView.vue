@@ -77,6 +77,7 @@ h1 {
   height: 150px auto;
   width: 300px auto;
   text-align: center;
+  margin-top: 25px;
 }
 .lead {
   background-color: #fff;
@@ -99,7 +100,7 @@ h1 {
 }
 @media all and (max-width: 350px) {
   aside{
-  height: 140vh;
+  height: 110vh auto;
 }
 }
 .btn {
