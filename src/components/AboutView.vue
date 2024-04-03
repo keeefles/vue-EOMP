@@ -27,9 +27,12 @@ export default {
 </script>
 
 <style scoped>
+#about {
+  background-color: #a8dadc;
+}
 p {
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .p-3{
     margin-left: auto;
@@ -83,6 +86,6 @@ p {
   }
 }
 h1 {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>

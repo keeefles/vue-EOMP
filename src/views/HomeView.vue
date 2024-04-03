@@ -51,9 +51,11 @@ export default {
 <style scoped>
 
 aside{
-  height: 60vh;
+  height: 80vh;
 }
-
+.row {
+  margin-bottom: 50px;
+}
 .background {
   background-color: #1d3557;
   height: 20px;

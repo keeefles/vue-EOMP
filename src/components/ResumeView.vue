@@ -26,7 +26,7 @@
           <div
             v-for="ex in experience"
             :key="ex.place"
-            class="card"
+            class="card ex-card"
             style="width: 18rem"
           >
             <div class="card-bodyy">
@@ -158,6 +158,11 @@ export default {
 }
 .card:hover {
   background: #1d3557;
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+.ex-card:hover {
+  background: #a8dadc;
   color: #fff;
   transition: 0.5s ease-in;
 }
