@@ -6,7 +6,8 @@ export default createStore({
   state: {
     home: null,
     about: null,
-    resume: null,
+    education: null,
+    experience: null,
     skills: null,
     testimonials: null,
     projects: null
@@ -20,9 +21,11 @@ export default createStore({
     setAbout(state, value) {
       state.about = value
     },
-    setResume(state, value) {
-      console.log(value);
-      state.resume = value
+    setEducation(state, value) {
+      state.education = value
+    },
+    setExperience(state, value) {
+      state.experience = value
     },
     setSkills(state, value) {
       state.skills = value
@@ -53,11 +56,20 @@ export default createStore({
       console.error ('Error Fetching Data from .json file', e)
       }
     },
-    async fetchResume(context) {
+    async fetchEducation(context) {
       try {
       let res =  await fetch(dataUrl)
-      let {resume} = await res.json()
-      context.commit('setResume', resume)
+      let {education} = await res.json()
+      context.commit('setEducation', education)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
+    },
+    async fetchExperience(context) {
+      try {
+      let res =  await fetch(dataUrl)
+      let {experience} = await res.json()
+      context.commit('setExperience', experience)
     } catch (e) {
       console.error ('Error Fetching Data from .json file', e)
       }

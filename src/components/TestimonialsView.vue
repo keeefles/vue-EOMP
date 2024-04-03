@@ -40,17 +40,17 @@ export default {
         height: auto;
     }
     .card-image {
-        width: 150px;
+        height: 200px;
         display: inline-block;
     }
     .card-deck {
         width: 280px; 
     }
     .card-quote {
-      height: 270px auto;
+      height: 260px;
       padding: 10px;
     }
-}
+}                                                   
 .card {
     display: flex;
     justify-content: space-evenly;
@@ -62,8 +62,8 @@ export default {
     justify-content: space-evenly;
 }
 .card-quote {
-    height: 220px auto;
-    padding: 15px auto;
+    height: 260px;
+    padding: 15px;
 }
 .card-text {
     height: 25px;
@@ -89,7 +89,7 @@ export default {
 .card-image {
   display: flex;
   margin: auto;
-  width: 200px;
+  height: 200px;
 }
 h1 {
   margin-top: 25px;

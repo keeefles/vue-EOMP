@@ -4,7 +4,7 @@
     <div class="row">
       <div class="colHome">
         <h1 class="heading">I am a <span id="titles">{{ title }}</span></h1>
-        <img src="https://i.postimg.cc/h43qB9jP/20231118-123519.jpg" alt="" class="imgHome">
+        <img src="https://iili.io/JNxx47S.md.jpg" alt="" class="imgHome">
       <div class="row1" v-if="home">
         <p class="lead" v-for="title in home" :key="title">{{ title }}</p>
       </div>
@@ -77,7 +77,7 @@ h1 {
   height: 150px auto;
   width: 300px auto;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .lead {
   background-color: #fff;

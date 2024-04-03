@@ -83,6 +83,6 @@ p {
   }
 }
 h1 {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 </style>
