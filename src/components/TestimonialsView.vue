@@ -4,13 +4,13 @@
             <h1>Testimonials</h1>
         </div>
 
-        <div id="testes" class="card-deck" v-if="testimonials">
-          <div v-for="testimonial in testimonials" :key="testimonial.name" id="card" class="card">
-            <div id="card-body" class="card-body">
+        <div class="card-deck" v-if="testimonials">
+          <div v-for="testimonial in testimonials" :key="testimonial.name" class="card">
+            <div class="card-body">
                 <h5 class="card-title" >{{ testimonial.name }} {{ testimonial.surname }}</h5>
                 <p class="card-text">{{ testimonial.title }}</p>
-                <p class="testes" >{{ testimonial.quotes }}</p>
-                <img :src="testimonial.profile" class="card-img-top" :alt="BRUH">
+                <p class="card-quote" >{{ testimonial.quotes }}</p>
+                <img :src="testimonial.profile" class="card-image" :alt="BRUH">
           </div>
           </div>
         </div>
@@ -31,79 +31,74 @@ export default {
 };
 </script>
 <style scoped>
-@media all and (max-width:351px){
-    #card-body{
-        margin-left: auto;
-        margin-right: auto;
-        width: max-content;
-    }
-    .testes{
+@media (max-width:351px){
+    .card {
         padding-right: 0px;
         padding-bottom: 0px;
         width: 10px;
         font-size: 15px;
+        height: auto;
     }
-    .card-img-top {
+    .card-image {
         width: 150px;
-        margin-right: 20px;
         display: inline-block;
     }
-    #testes {
-        width: 290px;
+    .card-deck {
+        width: 280px; 
+    }
+    .card-quote {
+      height: 270px auto;
+      padding: 10px;
     }
 }
-#card{
-    width: 22em;
-}
-#card-body{
-    margin-left: auto;
-    margin-right: auto;
-}
-#testes{
+.card {
     display: flex;
     justify-content: space-evenly;
 }
 .card-deck {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.card-body {
-    /* margin: 10px;
-    padding: 10px;
-    width: 200px; */
-    height: max-content;
-    justify-content: space-between;
+.card-quote {
+    height: 220px auto;
+    padding: 15px auto;
+}
+.card-text {
+    height: 25px;
 }
 .card{
+    width: 20em;
     padding: 10px 10px 10px 10px;
-    margin: 20px;
-    height: auto;
     border-radius: 15px;
     box-shadow: 10px 10px 15px 0px #a8dadc;
+    margin: 20px auto;
+}
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.card:hover {
+  border: none;
+  box-shadow: 10px 5px 15px 0px #a8dadc;
+}
+.card-image {
+  display: flex;
+  margin: auto;
+  width: 200px;
+}
+h1 {
+  margin-top: 25px;
 }
 .card:hover{
     box-shadow: 0px 2px 10px 5px #1d3557;
     color: #a8dadc;
-    margin: 10px;
-    padding: 10px;
     background-color: #1d3557;
     border: dashed #fff;
     transition: .5s ease-in;
-
-}
-.card-img-top {
-    width: 200px;
-}
-.testes{
-    height: 200px;
-    width: 250px;
-    /* padding-right: 2cap; */
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    margin-top: 25px;
 }
 </style>

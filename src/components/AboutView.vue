@@ -29,6 +29,7 @@ export default {
 <style scoped>
 p {
   font-size: 15px;
+  margin-top: 30px;
 }
 .p-3{
     margin-left: auto;
@@ -39,7 +40,7 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  /* padding: 15px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,7 +53,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: 20px;
 }
 .text-col {
   flex-basis: 65%;
@@ -83,6 +83,6 @@ p {
   }
 }
 h1 {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 </style>

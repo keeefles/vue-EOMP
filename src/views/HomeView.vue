@@ -84,11 +84,11 @@ h1 {
   color: #1d3557;
 }
 .row {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   justify-content: center;
-  flex-wrap: wrap;
-  height: 80vh;
+  /* flex-wrap: wrap; */
+  /* height: 80vh; */
 }
 .colHome{
     flex-basis: 45%;
