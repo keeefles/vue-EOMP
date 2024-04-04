@@ -184,6 +184,7 @@ export default {
 .card:hover {
   background: #1d3557;
   color: #fff;
+  box-shadow: #1d3557 5px 5px 5px 5px;
   transition: 0.5s ease-in;
 }
 .ex-card:hover {

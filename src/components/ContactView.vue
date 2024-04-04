@@ -8,18 +8,18 @@
                 <form action="https://formspree.io/f/xdoqknke" method="post">
 
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" required class="form-control" id="exampleFormControlInput1">
+                <input type="text" required class="form-control" id="exampleFormControlInput1" name="Name">
 
                 <label for="exampleFormControlInput1" class="form-label">Surname</label>
-                <input type="text" required class="form-control" id="exampleFormControlInput1">
+                <input type="text" required class="form-control" id="exampleFormControlInput1" name="Surname">
 
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email" >
 
                 <label for="exampleFormControlTextarea1" class="form-label">Type Message</label>
-                <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3" name="Message"></textarea>
 
-                <input class="btn" type="submit" name="Send" value="Submit" placeholder="Submit" >
+                <input class="btn" type="submit" placeholder="Submit" >
                 </form>
                 </div>
                 <div class="form-img">
