@@ -5,7 +5,7 @@
             <div class="main">
                 <div class="content">
                     <h2>Contact Me</h2>
-                <form action="https://formspree.io/f/xdoqknke" method="post">
+                <form action="https://formspree.io/f/xayrpryb" method="post">
 
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                 <input type="text" required class="form-control" id="exampleFormControlInput1" name="Name">
