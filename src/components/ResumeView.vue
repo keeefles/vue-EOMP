@@ -3,14 +3,14 @@
     <section>
       <div class="container" id="resume">
         <div class="row">
-          <h1>Education & <span>Experience</span></h1>
+          <h1>Education</h1>
         </div>
 
         <div class="card-deck" v-if="education">
           <div
             v-for="edu in education"
             :key="edu.place"
-            class="card"
+            class="card shadow border-0"
             style="width: 18rem"
           >
             <div class="card-bodyy">
@@ -22,11 +22,12 @@
             </div>
           </div>
         </div>
+      <h1>Experience</h1>
         <div class="card-deck" v-if="experience">
           <div
             v-for="ex in experience"
             :key="ex.place"
-            class="card ex-card"
+            class="card ex-card shadow border-0"
             style="width: 18rem"
           >
             <div class="card-bodyy">
@@ -48,15 +49,28 @@
         </div>
 
         <div class="card-deck" v-if="skills">
-          <div v-for="skill in skills" :key="skill.title" class="card">
+          <div v-for="skill in skills" :key="skill.title" class="card shadow border-0">
             <img
               :src="skill.image"
               class="card-img-top"
               :alt="`image for ${skill.title}`"
             />
-            <div class="card-body">
+            <div class="card-body skills-body">
               <h5 class="card-title">{{ skill.title }}</h5>
               <p class="card-experience">{{ skill.experience }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck" v-if="softSkills">
+          <div v-for="skill in softSkills" :key="skill.title" class="card shadow border-0">
+            <img
+              :src="skill.image"
+              class="card-img-top"
+              :alt="`image for ${skill.title}`"
+            />
+            <div class="card-body skills-body">
+              <h5 class="card-title">{{ skill.title }}</h5>
+              <p class="card-desc">{{ skill.description }}</p>
             </div>
           </div>
         </div>
@@ -86,21 +100,26 @@ export default {
     skills() {
       return this.$store.state.skills;
     },
+    softSkills() {
+      return this.$store.state.softSkills;
+    }
   },
   mounted() {
     this.$store.dispatch("fetchEducation");
     this.$store.dispatch("fetchExperience");
     this.$store.dispatch("fetchSkills");
+    this.$store.dispatch("fetchSoftSkills");
   },
 };
 </script>
 
 <style scoped>
+.skills-body {
+  padding: 0;
+  margin: 20px;
+}
 .container {
   margin: 20px auto;
-}
-.role {
-  font-style: normal;
 }
 .yes {
   text-decoration: none;
@@ -110,6 +129,11 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10px;
+}
+.card-desc {
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .card {
   margin: 20px auto;
@@ -122,14 +146,14 @@ export default {
   font-weight: bold;
   margin-right: auto;
   margin-left: auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 .card-title1 {
   text-align: center;
   font-weight: 500;
   margin-right: auto;
   margin-left: auto;
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px;
   font-weight: 700;
 }
@@ -139,6 +163,7 @@ export default {
   border-radius: 15px 15px 0 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 .card-bodyy {
   display: flex;
@@ -205,5 +230,8 @@ export default {
 }
 h1 {
   margin-top: 25px;
+}
+.card-experience {
+  font-size: 13px;
 }
 </style>

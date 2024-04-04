@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container rounded-2">
             
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,22 +23,22 @@
                 </li>
                 <li class="nav-item">
                     <a href="#resume" a class="nav-link">
-                        Resume
+                        Education & Experience
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" a class="nav-link">
-                        Projects
+                        My Projects
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#testimonials" a class="nav-link">
-                        Testimonials
+                        References
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" to="/contact" a class="nav-link">
-                        Contact Me
+                        Reach Out
                     </a>
                 </li>  
             </ul>
@@ -63,7 +63,8 @@
     padding: 5px;
 }
 .nav-item {
-    margin: 5px;
+    /* margin: 5px; */
+    margin: 0 10px;
 }
 nav {
   padding-left: 30px;

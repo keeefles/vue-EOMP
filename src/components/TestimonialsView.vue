@@ -1,7 +1,7 @@
 <template>
     <div class="container" id="testimonials">
         <div class="row">
-            <h1>Testimonials</h1>
+            <h1>References</h1>
         </div>
 
         <div class="card-deck" v-if="testimonials">

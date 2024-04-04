@@ -11,7 +11,7 @@
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p>
             <a :href="project.gitHub" class="btn" target="_blank"><i class="bi bi-github"> Github</i></a>
-            <a :href="project.netlify" class="btn" target="_blank"><i class="bi bi-cursor-fill"> Netlify</i> </a>
+            <a :href="project.netlify" class="btn" target="_blank"><i class="bi bi-cursor-fill"> Hosted</i> </a>
           </div>
           </div>
         </div>

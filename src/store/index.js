@@ -30,6 +30,9 @@ export default createStore({
     setSkills(state, value) {
       state.skills = value
     },
+    setSoftSkills(state, value) {
+      state.softSkills = value
+    },
     setTestimonials(state, value) {
       state.testimonials = value
     },
@@ -88,6 +91,15 @@ export default createStore({
       let res =  await fetch(dataUrl)
       let {skills} = await res.json()
       context.commit('setSkills', skills)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
+    },
+    async fetchSoftSkills(context) {
+      try {
+      let res =  await fetch(dataUrl)
+      let {softSkills} = await res.json()
+      context.commit('setSoftSkills', softSkills)
     } catch (e) {
       console.error ('Error Fetching Data from .json file', e)
       }

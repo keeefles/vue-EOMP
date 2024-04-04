@@ -22,3 +22,16 @@
   color: #000000;
   background-image: url('https://i.postimg.cc/t4HNtKyd/eomp-background.png')
 }
+/* p {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+

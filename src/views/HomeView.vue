@@ -54,7 +54,7 @@ aside{
   height: 80vh;
 }
 .row {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .background {
   background-color: #1d3557;
@@ -103,7 +103,11 @@ h1 {
 @media all and (max-width: 350px) {
   aside{
   height: 130vh;
-}
+  margin-bottom: 20px;
+  }
+  .colHome {
+    width: 250px;
+  }
 }
 .btn {
   border-radius: 30px;

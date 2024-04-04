@@ -1,7 +1,7 @@
 <template>
   <div class="container p-3" id="about">
     <h1 id="heading">About Me</h1>
-    <div class="row">
+    <div class="row shadow rounded-4">
       <div class="img-col">
         <img src="https://iili.io/JXS2e0x.jpg" alt="image" class="center aboutImg" align-items="center">
       </div>
@@ -27,13 +27,24 @@ export default {
 </script>
 
 <style scoped>
-#about {
+.row {
   background-color: #a8dadc;
+  color: #fff;
 }
 p {
   font-size: 15px;
   margin-top: 15px;
+  opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 3;
+    }
+  }
 .p-3{
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +70,6 @@ p {
 }
 .text-col {
   flex-basis: 65%;
-  background-color: white
 }
 .img-col {
   flex-basis: 35%;
