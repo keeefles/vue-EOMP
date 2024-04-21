@@ -8,7 +8,8 @@
       <div class="row1" v-if="home">
         <p class="lead" v-for="title in home" :key="title">{{ title }}</p>
       </div>
-      <button class="btn"><a href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link" class="yes" target="_blank">Download CV</a></button>
+      <!-- https://drive.google.com/file/d/1ErLcaRJjtHc5-xYv6n1QYv8RS67fWBzv/view?usp=drive_link -->
+      <button class="btn"><a href="https://drive.google.com/file/d/1ErLcaRJjtHc5-xYv6n1QYv8RS67fWBzv/view?usp=drive_link" class="yes" target="_blank">Download CV</a></button>
       <div class="background container-fluid"></div>
       </div>
     </div>
