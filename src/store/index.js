@@ -8,6 +8,7 @@ export default createStore({
     about: null,
     education: null,
     experience: null,
+    badges: null,
     skills: null,
     testimonials: null,
     projects: null
@@ -26,6 +27,9 @@ export default createStore({
     },
     setExperience(state, value) {
       state.experience = value
+    },
+    setBadges(state, value) {
+      state.badges = value
     },
     setSkills(state, value) {
       state.skills = value
@@ -73,6 +77,15 @@ export default createStore({
       let res =  await fetch(dataUrl)
       let {experience} = await res.json()
       context.commit('setExperience', experience)
+    } catch (e) {
+      console.error ('Error Fetching Data from .json file', e)
+      }
+    },
+    async fetchBadges(context) {
+      try {
+      let res =  await fetch(dataUrl)
+      let {badges} = await res.json()
+      context.commit('setBadges', badges)
     } catch (e) {
       console.error ('Error Fetching Data from .json file', e)
       }
