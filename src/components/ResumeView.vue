@@ -45,12 +45,12 @@
             v-for="bad in badges"
             :key="bad.name"
             class="card ex-card shadow border-0"
-            style="width: 18rem"
+            style="width: 18rem; height: 280px"
           >
             <div class="card-bodyy">
-              <h5 class="card-title1">{{ bad.name }}</h5>
-              <p class="card-text font">{{ bad.image }}</p>
-              <p class="card-text font">{{ bad.place }}</p>
+              <h5 class="card-title1" style="height: 60px">{{ bad.name }}</h5>
+              <img :src="bad.image" alt="" id="certy">
+              <p class="card-text">{{ bad.place }}</p>
               <p class="card-text role">{{ bad.year }}</p>
             </div>
           </div>
@@ -92,14 +92,7 @@
         </div>
       </div>
     </section>
-    <button class="btn">
-      <a
-        href="https://drive.google.com/file/d/1y0VkOYnjQD-qnH3ZZmWHsrfZ-MNUXjAz/view?usp=drive_link"
-        target="_blank"
-        class="yes"
-        >Download CV</a
-      >
-    </button>
+    <button class="btn"><a href="https://drive.google.com/file/d/1qe_3_ylQE_j-klPO2M5-RbqidhjEYX2J/view?usp=sharing" class="yes" target="_blank">Download CV</a></button>
   </div>
 </template>
 
@@ -113,6 +106,9 @@ export default {
     experience() {
       return this.$store.state.experience;
     },
+    badges() {
+      return this.$store.state.badges;
+    },
     skills() {
       return this.$store.state.skills;
     },
@@ -125,11 +121,16 @@ export default {
     this.$store.dispatch("fetchExperience");
     this.$store.dispatch("fetchSkills");
     this.$store.dispatch("fetchSoftSkills");
+    this.$store.dispatch("fetchBadges");
   },
 };
 </script>
 
 <style scoped>
+#certy {
+  height: 8rem;
+  margin: auto;
+}
 .skills-body {
   padding: 0;
   margin: 20px;
