@@ -39,6 +39,22 @@
             </div>
           </div>
         </div>
+      <h1>Badges</h1>
+        <div class="card-deck" v-if="badges">
+          <div
+            v-for="bad in badges"
+            :key="bad.name"
+            class="card ex-card shadow border-0"
+            style="width: 18rem"
+          >
+            <div class="card-bodyy">
+              <h5 class="card-title1">{{ bad.name }}</h5>
+              <p class="card-text font">{{ bad.image }}</p>
+              <p class="card-text font">{{ bad.place }}</p>
+              <p class="card-text role">{{ bad.year }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
