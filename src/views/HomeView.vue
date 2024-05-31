@@ -86,11 +86,7 @@ h1 {
   color: #1d3557;
 }
 .row {
-  /* display: flex; */
-  /* flex-direction: row; */
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* height: 80vh; */
 }
 .colHome{
     flex-basis: 45%;
@@ -102,7 +98,7 @@ h1 {
 }
 @media all and (max-width: 350px) {
   aside{
-  height: 130vh;
+  height: 80vh;
   margin-bottom: 20px;
   }
   .colHome {
