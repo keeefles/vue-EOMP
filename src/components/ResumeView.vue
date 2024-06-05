@@ -213,7 +213,6 @@ export default {
   width: 198.4px;
   margin: 0;
   font-size: 15px;
-  /* font-style: italic; */
 }
 .font {
   font-style: italic;

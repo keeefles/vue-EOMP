@@ -25,17 +25,13 @@
                 <div class="form-img">
                     <img src="https://i.postimg.cc/bJvVZBhx/2.png" class="rotate" alt="placeholder">
                 <div class="form-text">
-                    <p>
-                        <i class="bi bi-whatsapp"> +27 79 866 6734</i>
+                    <p class="bi bi-whatsapp"> +27 79 866 6734
                     </p>
-                    <p>
-                        <i class="bi bi-house"> Rocklands, Mitchells Plain</i>
+                    <p class="bi bi-house"> Cape Town, South Africa
                     </p>
-                    <p>
-                        <i class="bi bi-instagram"><a href="https://www.instagram.com/_aakeefahjones_/" target="_blank">_aakeefahjones_</a></i>
+                    <p class="bi bi-instagram"><a href="https://www.instagram.com/_aakeefahjones_/" target="_blank"> _aakeefahjones_</a>
                     </p>
-                    <p>
-                        <i class="bi bi-github"><a href="https://github.com/keeefles" target="_blank">@keeefles</a></i>
+                    <p class="bi bi-github"><a href="https://github.com/keeefles" target="_blank"> @keeefles</a>
                     </p>
                     </div>
                 </div>
@@ -51,6 +47,13 @@
 </script>
 
 <style scoped>
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.bi:hover{
+    color: #a8dadc;
+}
 .contact-form {
     justify-content: center;
     display: grid;
