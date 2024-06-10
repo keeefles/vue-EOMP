@@ -32,9 +32,9 @@
           >
             <div class="card-bodyy">
               <h5 class="card-title1">{{ ex.place }}</h5>
-              <p class="card-text font">{{ ex.information }}</p>
-              <p class="card-text font">{{ ex.type }}</p>
-              <p class="card-text role">{{ ex.role }}</p>
+              <p class="card-text font" style="font-size: 13px">{{ ex.information }}</p>
+              <p class="card-text font" style="font-size: 13px">{{ ex.type }}</p>
+              <p class="card-text role" style="height: 68px; font-size: 14px">{{ ex.role }}</p>
               <p class="card-text year">{{ ex.year }}</p>
             </div>
           </div>
